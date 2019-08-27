@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+body{width:100%;}
+
+.personalIndex{width:1024px;margin:0 auto;overflow:auto;}
+
+/*安全指数栏*/
+.safeIndex{width:100%;margin:10px 0;}
+.safeIndex font{display:inline-block; vertical-align:top;line-height:18px;}
+.safeIndex font.safeNum{color:#ffbb41;font-weight:bold;font-size:16px;}
+.safeIndex .safeBar{position:relative;display:inline-block;height:18px;width:400px;border-radius:18px;margin:0 20px;background:#eee;}
+.safeIndex .safeBar span{position:absolute;width:318px;height:16px;border-radius:16px;top:1px;left:1px;background:#ffbb41;}
+
+/*个人信息*/
+.personlInfo{display:inline-block;width:1002px;margin:10px 0;padding:10px;border:1px solid #ddd;}
+.personlInfo-left{float:left;width:260px;border-right:1px solid #ddd;}
+.personlInfo-left table{width:100%;}
+.personlInfo-left table th.personalPortrail{width:100px;}
+.personlInfo-left table th.personalPortrail img{float:left;width:80px;height:80px;}
+.personlInfo-left table th.personalPortrail a{float:left;margin-top:10px;width:80px;font-weight:normal;font-size:12px;padding-left:5px;color:#666;background:url(../images/arrow-back-blue.png) left center no-repeat;}
+.personlInfo-left table td.personalName{font-size:16px;}
+.personlInfo-left table td.personalIcon{ vertical-align:bottom;}
+.personlInfo-left table td.personalIcon span{margin-right:15px;}
+.personlInfo-left table td.personalIcon span img{width:22px;}
+.personlInfo-right{float:left;width:680px;margin-left:40px;}
+.personlInfo-right table{width:100%;}
+.personlInfo-right table th{text-align:left;padding:8px 0;font-weight:normal;letter-spacing:1px;}
+.personlInfo-right table td font{margin-left:5px;}
+.personlInfo-right table .redfont{color:#ed431a;}
+.personlInfo-right table td.operaBtn-td a{border:1px solid #ddd;border-radius:2px;background:#f9f9f9;padding:5px 10px;}
+.personlInfo-right table td.operaBtn-td a:hover{background:#f5f5f5;border:1px solid #ccc;}
+
+/*登录历史*/
+.loginRecord{display:inline-block;width:1002px;margin:10px 0;padding:10px;border:1px solid #ddd;}
+h1.personalIndex-blockname{font-size:18px;font-weight:bold;width:100%;padding-bottom:10px;border-bottom:1px solid #eee;}
+.loginRecord p{padding:15px 0;}
+.loginRecord p a{margin-left:10px;color:#1ba8dd;}
+.loginRecord p a:hover{text-decoration:underline;}
+.loginRecord table{width:100%; table-layout:fixed; border-collapse:collapse;}
+.loginRecord tr.thead{background:#f5f5f5;}
+.loginRecord tr.thead th{padding:8px 0;}
+.loginRecord td{border-bottom:1px dotted #eee;text-align:center;padding:8px 0;font-size:13px;}
+.loginRecord tr.date td{color:#999;}
+

@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*浏览器滚动条样式*/
+html {
+    scrollbar-arrow-color: #606060; /*三角箭头颜色*/
+    scrollbar-face-color: #c2c2c2; /*立体滚动条颜色（包括箭头部分的背景色）*/
+    scrollbar-3dlight-color: #c2c2c2; /*亮边颜色*/
+    scrollbar-highlight-color: #c2c2c2; /*高亮颜*/
+    scrollbar-shadow-color: #f2f2f2; /*阴影颜色*/
+    scrollbar-darkshadow-color: #f2f2f2; /*外阴影颜色*/
+    scrollbar-track-color: #f2f2f2; /*背景颜色*/
+    scrollbar-base-color: #c2c2c2; /*滚动条的基色*/
+}
+
+/*webkit浏览器滚动条样式*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #c2c2c2;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #656565;
+}
+
+/*公共样式*/
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑", Arial;
+}
+
+ul {
+    margin: 0px;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input:focus {
+    border: 1px solid #39F;
+}
+
+textarea {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    resize: none;
+}
+
+textarea:focus {
+    border: 1px solid #39F;
+}
+
+button {
+    border: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*文档格式图标*/
+.filekindicon-doc {
+    background-image: url(../images/filekind-doc.png);
+    border-radius: 4px;
+}
+
+.filekindicon-ppt {
+    background-image: url(../images/filekind-ppt.png);
+    border-radius: 4px;
+}
+
+.filekindicon-xls {
+    background-image: url(../images/filekind-xls.png);
+    border-radius: 4px;
+}
+
+.filekindicon-pdf {
+    background-image: url(../images/filekind-pdf.png);
+    border-radius: 4px;
+}
+
+.filekindicon-txt {
+    background-image: url(../images/filekind-txt.png);
+    border-radius: 4px;
+}
+
+.filekindicon-pic {
+    background-image: url(../images/filekind-pic.png);
+    border-radius: 4px;
+}
+
+.filekindicon-rar {
+    background-image: url(../images/filekind-rar.png);
+    border-radius: 4px;
+}
+
+/*按钮*/
+.White-btn {
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.White-btn:hover {
+    color: #111;
+    border: 1px solid #bbb;
+}
+
+.Blue-btn {
+    color: #fff;
+    background-color: #429bd1;
+    border: 1px solid #4495c7;
+    cursor: pointer;
+}
+
+.Blue-btn:hover {
+    background-color: #4ca8df;
+}
+
+/*勾选*/
+span.gouselect {
+    float: left;
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/gou-none.png);
+    background-position: left center;
+    bakcground-repea: no-repeat;
+    cursor: pointer;
+}
+
+span.gouselected {
+    background-image: url(../images/gou-selected.png);
+    background-position: left center;
+    bakcground-repea: no-repeat;
+}
+

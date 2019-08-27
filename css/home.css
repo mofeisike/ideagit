@@ -1,0 +1,409 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background: #fdfdfd;
+}
+
+/*我要分享*/
+.iWantShare {
+    width: 100%;
+    padding: 5px 0;
+    background: #f5f5f5;
+}
+
+.iWantShare .iWantShare-table {
+    width: 800px;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.iWantShare .iWantShare-table td img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.iWantShare .iWantShare-table td font {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.iWantShare .iWantShare-table td:hover font {
+    color: #90a7ad;
+}
+
+.iWantShare .iWantShare-table td:hover img {
+    margin-top: -2px;
+    width: 62px;
+    height: 62px;
+}
+
+/*分享动态过滤*/
+.sharingFilter {
+    float: left;
+    width: 90%;
+    margin: 10px 5%;
+}
+
+.sharingFilter-change {
+    float: left;
+}
+
+.sharingFilter-change li {
+    float: left;
+    margin-right: 10px;
+    padding: 0 2px;
+    cursor: pointer;
+    color: #666;
+    line-height: 30px;
+}
+
+.sharingFilter-change li:hover {
+    border-bottom: 2px solid #4495c7;
+    color: #4495c7;
+}
+
+.sharingFilter-change li.sharingFilter-change-selected {
+    border-bottom: 2px solid #4495c7;
+    color: #4495c7;
+}
+
+.sharingFilter-search {
+    float: right;
+}
+
+.sharingFilter-search input {
+    float: left;
+    border-radius: 2px 0 0 2px;
+}
+
+.sharingFilter-search a.searchbtn {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-left: 0;
+    background: #fff;
+    border-radius: 0 2px 2px 0;
+    background: url(../images/searchbtn.png) center center no-repeat;
+}
+
+.sharingFilter-search a.searchbtn:hover {
+    background: #429bd1 url(../images/searchbtn-white.png) center center no-repeat;
+    border-color: #4495c7;
+}
+
+/*瀑布流分享动态*/
+.sharing {
+    width: 100%;
+}
+
+.sharingData {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sharingUl {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sharingUl:last-child {
+    margin-right: 0;
+}
+
+.sharingData-item {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.2);
+    text-align: center;
+    border: 1px solid #DEDCDC;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sharingData-item:hover {
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
+    border: 1px solid #AFAFAF
+}
+
+.sharingData-item .sharingData-item-uploadThings {
+    padding: 10px 3%;
+    width: 94%;
+    background: #fff;
+}
+
+.sharingData-item .sharingData-item-uploadThings h1.fileName-firstlevel {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.sharingData-item .sharingData-item-uploadThings h1.fileName-firstlevel span.filekindicon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.sharingData-item .sharingData-item-uploadThings h1.fileName-firstlevel a:hover {
+    color: #429bd1;
+}
+
+.sharingData-item .sharingData-item-uploadThings ul.fileName-secondlevel {
+    width: 96%;
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+.sharingData-item .sharingData-item-uploadThings ul.fileName-secondlevel li {
+    width: 100%;
+    text-align: left;
+    padding: 4px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+    font-size: 13px;
+}
+
+.sharingData-item .sharingData-item-uploadThings ul.fileName-secondlevel li span.filekindicon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.sharingData-item .sharingData-item-uploadThings ul.fileName-sharepicture {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sharingData-item .sharingData-item-uploadThings ul.fileName-sharepicture li {
+    float: left;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.sharingData-item .sharingData-item-uploadThings ul.fileName-sharepicture li img {
+    width: 100%;
+}
+
+.sharingData-item .sharingData-item-uploadThings li.andSoOn {
+    width: 100%;
+    text-align: left;
+    padding: 4px 0;
+    color: #666;
+    font-size: 13px;
+}
+
+.sharingData-item .sharingData-item-uploadInfo {
+    float: left;
+    padding: 5px 2%;
+    width: 96%;
+    background: #f5f5f5;
+}
+
+.sharingData-item .sharingData-item-uploadInfo table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.sharingData-item .sharingData-item-uploadInfo table td {
+    padding: 2px 0;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-personInfo {
+    text-align: left;
+    color: #999;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-personInfo a:hover {
+    color: #429bd1;
+    text-decoration: underline;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-personInfo .uploadInfo-personInfo-portrait img {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-date {
+    text-align: right;
+    color: #999;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-zan {
+    text-align: left;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-zan a {
+    color: #429bd1;
+    margin-right: 10px;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-zan a:hover {
+    text-decoration: underline;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-operabtn a {
+    float: right;
+    margin-left: 10px;
+    color: #429bd1;
+}
+
+.sharingData-item .sharingData-item-uploadInfo td.uploadInfo-operabtn a:hover {
+    text-decoration: underline;
+}
+
+.sharingData-item .sharingData-item-comment {
+    display: none;
+    float: left;
+    width: 96%;
+    padding: 10px 2%;
+}
+
+.sharingData-item .sharingData-item-comment textarea {
+    float: left;
+    width: 97%;
+}
+
+.sharingData-item .sharingData-item-comment a.commentBtn {
+    float: right;
+    clear: both;
+    margin-top: 8px;
+    padding: 3px 15px;
+    background: #db2c01;
+    border: 1px solid #ca2a02;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.sharingData-item .sharingData-item-comment a.commentBtn:hover {
+    background: #e52e01;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory {
+    float: left;
+    width: 100%;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory h1.commentHistoryNum {
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    border-bottom: 1px solid #ddd;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory table {
+    width: 100%;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item {
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item:last-child {
+    border-bottom: none;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item .commentPortrail {
+    vertical-align: top;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item .commentPortrail img {
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item .commentTime {
+    vertical-align: top;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item .commentTime p {
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item .commentDetail {
+    text-align: left;
+    font-size: 13px;
+    color: #444;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item .commentHistory-item-operaBtnTd {
+    text-align: right;
+    color: #999;
+    padding: 5px 0;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item a.commentHistory-item-operaBtn {
+    color: #429bd1;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item a.commentHistory-item-operaBtn:last-child {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.sharingData-item .sharingData-item-comment ul.commentHistory li.commentHistory-item a.commentHistory-item-operaBtn:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,755 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background: #fafafa;
+}
+
+.shareboxOuterDiv {
+    width: 100%;
+}
+
+.sharebox {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+/*左侧-好友tab*/
+.sharebox-left {
+    float: left;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.sharebox-left .xw-sharebox-left-middle {
+    overflow-y: auto;
+}
+
+.sharebox-left .chatKind {
+    width: 100%;
+    height: 50px;
+    background: #f5f5f5;
+}
+
+.sharebox-left .chatKind li {
+    float: left;
+    width: 149px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.sharebox-left .chatKind li span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.sharebox-left .chatKind li font {
+    display: inline-block;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.sharebox-left .chatKind li span.icon-chat {
+    background: url(../images/share-chat-grey.png) center center no-repeat;
+}
+
+.sharebox-left .chatKind li span.icon-friend {
+    background: url(../images/share-friend-grey.png) center center no-repeat;
+}
+
+.sharebox-left .chatKind li:hover font {
+    color: #429bd1;
+}
+
+.sharebox-left .chatKind li:hover span.icon-chat {
+    background: url(../images/share-chat-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatKind li:hover span.icon-friend {
+    background: url(../images/share-friend-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatKind li.chatKind-lion font {
+    color: #429bd1;
+}
+
+.sharebox-left .chatKind li.chatKind-lion span.icon-chat {
+    background: url(../images/share-chat-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatKind li.chatKind-lion span.icon-friend {
+    background: url(../images/share-friend-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatKind li:last-child {
+    border-right: 0;
+}
+
+/*左侧-好友列表*/
+.sharebox-left .friendList {
+    width: 100%;
+}
+
+.sharebox-left .friendList li {
+    width: 96%;
+    padding: 5px 2%;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.sharebox-left .friendList li:hover {
+    background: #f7fcff;
+}
+
+.sharebox-left .friendList li:hover td.arrow {
+    background: url(../images/itemoperabtn-more-lightgrey.png) right center no-repeat;
+}
+
+.sharebox-left .friendList li table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.sharebox-left .friendList li table th.portrail img {
+    width: 50px;
+    height: 50px;
+}
+
+.sharebox-left .friendList li table td {
+    padding: 5px;
+}
+
+.sharebox-left .friendList li table td.time {
+    text-align: right;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.sharebox-left .friendList li table td.lastchat {
+    color: #aaa;
+}
+
+.sharebox-left .friendList li table td.arrow {
+    position: relative;
+}
+
+.sharebox-left .friendList li table td.arrow:hover dl {
+    display: block;
+}
+
+.sharebox-left .friendList li table td.arrow dl {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    border: 1px solid #eee;
+}
+
+.sharebox-left .friendList li table td.arrow dt {
+    width: 60px;
+    padding: 5px;
+    background: #fff;
+    color: #444;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sharebox-left .friendList li table td.arrow dt:hover {
+    background: #59aee2;
+    color: #fff;
+}
+
+.sharebox-left .friendList li.friendList-lion {
+    background: #429bd1;
+}
+
+.sharebox-left .friendList li.friendList-lion td {
+    color: #fff;
+}
+
+.sharebox-left .friendList li.friendList-lion td.time {
+    color: #fff;
+}
+
+.sharebox-left .friendList li.friendList-lion td.lastchat {
+    color: #fff;
+}
+
+/*左侧-创建*/
+.sharebox-left .chatOperaBar {
+    width: 100%;
+    height: 50px;
+    background: #f5f5f5;
+}
+
+.sharebox-left .chatOperaBar li {
+    float: left;
+    height: 50px;
+    width: 120px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sharebox-left .chatOperaBar li.setting {
+    width: 60px;
+}
+
+.sharebox-left .chatOperaBar li span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.sharebox-left .chatOperaBar li font {
+    display: inline-block;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.sharebox-left .chatOperaBar li span.icon-addgroup {
+    background: url(../images/share-addgroup-grey.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li span.icon-addfriend {
+    background: url(../images/share-addfriend-grey.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li span.icon-setting {
+    background: url(../images/share-setting-grey.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li:hover {
+    background: #eee;
+}
+
+.sharebox-left .chatOperaBar li:hover font {
+    color: #429bd1;
+}
+
+.sharebox-left .chatOperaBar li:hover span.icon-addgroup {
+    background: url(../images/share-addgroup-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li:hover span.icon-addfriend {
+    background: url(../images/share-addfriend-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li:hover span.icon-setting {
+    background: url(../images/share-setting-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li.chatOperaBar-lion font {
+    color: #429bd1;
+}
+
+.sharebox-left .chatOperaBar li.chatOperaBar-lion span.icon-addgroup {
+    background: url(../images/share-addgroup-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li.chatOperaBar-lion span.icon-addfriend {
+    background: url(../images/share-addfriend-blue.png) center center no-repeat;
+}
+
+.sharebox-left .chatOperaBar li.chatOperaBar-lion span.icon-setting {
+    background: url(../images/share-setting-blue.png) center center no-repeat;
+}
+
+/*----------------------右侧-聊天模块----------------------*/
+/*右侧-顶部*/
+.sharebox-right {
+    float: right;
+    width: 680px;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.sharebox-right .xw-sharebox-right-middle {
+    overflow-y: auto;
+}
+
+.sharebox-right .chatBoxTop {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #f5f5f5;
+}
+
+.sharebox-right .chatBoxTop .chatName {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sharebox-right .chatBoxTop .chatName font {
+    display: inline-block;
+    line-height: 50px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.sharebox-right .chatBoxTop .chatName span {
+    display: inline-block;
+    width: 9px;
+    height: 10px;
+    background: url(../images/arrow-small-color444.png) center center no-repeat;
+}
+
+.sharebox-right .chatBoxTop .chatName:hover font {
+    color: #429bd1;
+}
+
+.sharebox-right .chatBoxTop .chatName:hover span {
+    background: url(../images/arrow-small-blue.png) center center no-repeat;
+}
+
+.sharebox-right .chatBoxTop a.filesBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    background: #e2e2e2;
+    border-radius: 2px;
+}
+
+.sharebox-right .chatBoxTop a.filesBtn:hover {
+    background: #ddd;
+}
+
+/*右侧-文字信息*/
+.sharebox-right .messageList {
+    width: 96%;
+    padding: 10px 2%;
+}
+
+.sharebox-right .messageList .chattime {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.sharebox-right .messageList .chatListBlock {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.sharebox-right .messageList .chatListBlock table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.sharebox-right .messageList .chatListBlock table th {
+    width: 50px;
+    vertical-align: top;
+}
+
+.sharebox-right .messageList .chatListBlock table th img {
+    width: 50px;
+    height: 50px;
+}
+
+.sharebox-right .messageList .chatListBlock td {
+    padding: 0 10px;
+}
+
+.sharebox-right .messageList .chatList-other td {
+    text-align: left;
+}
+
+.sharebox-right .messageList .chatList-other td .Bg-other {
+    float: left;
+    background-color: #f2fcff;
+    border-radius: 2px;
+}
+
+.sharebox-right .messageList .chatList-other td .chatBg-other {
+    max-width: 495px;
+    padding: 10px;
+}
+
+.sharebox-right .messageList .chatList-mine td {
+    text-align: right;
+}
+
+.sharebox-right .messageList .chatList-mine td .Bg-mine {
+    float: right;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+}
+
+.sharebox-right .messageList .chatList-mine td .chatBg-mine {
+    max-width: 495px;
+    padding: 10px;
+}
+
+/*右侧-分享文档*/
+.sharebox-right .messageList .shareFile {
+    width: 240px;
+    padding: 10px;
+}
+
+.sharebox-right .messageList .shareFile div {
+    float: left;
+}
+
+.sharebox-right .messageList .shareFile div.shareFileKind {
+    width: 50px;
+    height: 60px;
+}
+
+.sharebox-right .messageList .shareFile .shareFileKind-zip {
+    background: url(../images/shareFileKind.png) -175px -18px no-repeat;
+}
+
+.sharebox-right .messageList .shareFile .shareFileKind-doc {
+    background: url(../images/shareFileKind.png) -481px -18px no-repeat;
+}
+
+.sharebox-right .messageList .shareFile .shareFileKind-xls {
+    background: url(../images/shareFileKind.png) -328px -18px no-repeat;
+}
+
+.sharebox-right .messageList .shareFile .shareFileKind-ppt {
+    background: url(../images/shareFileKind.png) -634px -18px no-repeat;
+}
+
+.sharebox-right .messageList .shareFile .shareFileKind-pdf {
+    background: url(../images/shareFileKind.png) -940px -18px no-repeat;
+}
+
+.sharebox-right .messageList .shareFile .shareFileKind-txt {
+    background: url(../images/shareFileKind.png) -1094px -18px no-repeat;
+}
+
+.sharebox-right .messageList .shareFile div.shareFileInfo {
+    width: 140px;
+    margin: 0 10px;
+}
+
+.sharebox-right .messageList .shareFile div.shareFileInfo p {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.sharebox-right .messageList .shareFile div.shareFileInfo p.shareFileInfo-name a:hover {
+    color: #429bd1;
+}
+
+.sharebox-right .messageList .shareFile div.shareFileInfo p.shareFileInfo-size {
+    color: #999;
+    font-size: 12px;
+}
+
+.sharebox-right .messageList .shareFile div.shareFileDownload {
+    width: 26px;
+    height: 60px;
+    background: url(../images/itemoperabtn-download-lightgrey.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.sharebox-right .messageList .shareFile div.shareFileDownload:hover {
+    background: url(../images/itemoperabtn-download.png) center center no-repeat;
+}
+
+/*右侧-分享图片*/
+.sharebox-right .messageList .sharePicture {
+    position: relative;
+    width: 200px;
+    padding: 10px;
+}
+
+.sharebox-right .messageList .sharePicture div {
+    float: left;
+}
+
+.sharebox-right .messageList .sharePicture img {
+    float: left;
+    width: 200px;
+}
+
+.sharebox-right .messageList .sharePicture div.sharePicture-size {
+    position: absolute;
+    width: 180px;
+    padding: 0 10px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../images/itemoperabtn-download-white.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.sharebox-right .messageList .sharePicture div.sharePicture-size:hover {
+    background-image: url(../images/itemoperabtn-download.png);
+}
+
+/*右侧-底部*/
+.sharebox-right .chatBoxBottom {
+    width: 100%;
+    height: 50px;
+    background: #f5f5f5;
+}
+
+.sharebox-right .chatBoxBottom a {
+    float: left;
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sharebox-right .chatBoxBottom input {
+    float: left;
+    width: 480px;
+    margin: 10px 0 10px 10px;
+}
+
+/*----------------------右侧-文件库模块（部分css基于聊天模块）----------------------*/
+/*右侧-顶部*/
+.sharebox-right .fileBoxTop {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #f5f5f5;
+}
+
+.sharebox-right .fileBoxTop .fileBoxName {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sharebox-right .fileBoxTop .fileBoxName font {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.sharebox-right .fileBoxTop a.goBackBtn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    background: #e2e2e2;
+    border-radius: 2px;
+}
+
+.sharebox-right .fileBoxTop a.goBackBtn:hover {
+    background: #ddd;
+}
+
+/*列表数据-表头*/
+.fileList {
+    width: 100%;
+}
+
+.fileList .wangpan-fileList-table-thead {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fileList .wangpan-fileList-table-thead tr.tablehead th {
+    color: #888;
+    text-align: left;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+}
+
+.fileList .wangpan-fileList-table-thead tr.tablehead th a.operabtn {
+    position: relative;
+    padding: 2px 14px;
+    border-radius: 2px;
+    margin-left: 4px;
+}
+
+.fileList .wangpan-fileList-table-thead tr.tablehead th.fileName {
+    width: 50%;
+}
+
+.fileList .wangpan-fileList-table-thead tr.tablehead th.fileDate {
+    width: 20%;
+}
+
+.fileList .wangpan-fileList-table-thead tr.tablehead th.fileSize {
+    width: 15%;
+}
+
+.fileList .wangpan-fileList-table-thead tr.tablehead th.whoshare {
+    width: 15%;
+}
+
+/*列表数据-表身*/
+.fileList .wangpan-fileList-table-tbody-div {
+    overflow-y: auto;
+}
+
+.fileList .wangpan-fileList-table-tbody {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fileList .wangpan-fileList-table-tbody tr:hover {
+    background: #f7fcff;
+}
+
+.fileList .wangpan-fileList-table-tbody tr:hover .itemOperaBtn {
+    display: block;
+}
+
+.fileList .wangpan-fileList-table-tbody tr.trselected {
+    background: #f7fcff;
+}
+
+.fileList .wangpan-fileList-table-tbody td {
+    position: relative;
+    color: #444;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fileList .wangpan-fileList-table-tbody td.td-fileName {
+    width: 50%;
+}
+
+.fileList .wangpan-fileList-table-tbody td.td-fileDate {
+    width: 20%;
+}
+
+.fileList .wangpan-fileList-table-tbody td.td-fileSize {
+    width: 15%;
+}
+
+.fileList .wangpan-fileList-table-tbody td.td-whoshare {
+    width: 15%;
+}
+
+.fileList .wangpan-fileList-table-tbody td span.table-data-kindicon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fileList .wangpan-fileList-table-tbody td .itemOperaBtn {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: #f7fcff;
+}
+
+.fileList .wangpan-fileList-table-tbody td .itemOperaBtn a {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 2px 8px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.fileList .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-download {
+    background-image: url(../images/itemoperabtn-download-lightblue.png);
+}
+
+.fileList .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-download:hover {
+    background-image: url(../images/itemoperabtn-download.png);
+}
+
+.fileList .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-delete {
+    background-image: url(../images/tongxunlu-left-delete-lightblue.png);
+}
+
+.fileList .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-delete:hover {
+    background-image: url(../images/tongxunlu-left-delete-hover.png);
+}
+
+/*----------------------右侧-朋友模块（部分css基于聊天模块和文件库模块）----------------------*/
+.addFriend {
+    width: 100%;
+}
+
+.addFriend-bg {
+    float: left;
+    width: 94%;
+    margin: 10px 2%;
+    background: #f5f5f5;
+    padding: 10px 0 0 2%;
+}
+
+.addFriend-bg .addFriend-item {
+    float: left;
+    height: 140px;
+    width: 110px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px dotted #ddd;
+    background-color: #fff;
+    background-image: url(../images/add-grey.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.addFriend-bg .addFriend-item:hover {
+    background-color: #eee;
+}
+
+.addFriend-bg .friend-item {
+    float: left;
+    height: 140px;
+    width: 110px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.addFriend-bg .friend-item img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.addFriend-bg .friend-item p {
+    float: left;
+    padding: 5px;
+    width: 100px;
+}
+
+.addFriend-bg .friend-item:hover {
+    border: 1px solid #ccc;
+}

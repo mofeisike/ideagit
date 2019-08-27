@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+.openWindow{width:100%;}
+
+/*弹窗-选择上传按钮*/
+.openWindow .addBtn{float:left;width:100%;text-align:center;}
+.openWindow .addBtn ul{display:inline-block;margin:10px auto;}
+.openWindow .addBtn ul li{float:left;margin-right:5px;}
+.openWindow .addBtn ul li a{float:left;padding:5px 10px;text-align:center;border:1px solid #ddd;border-radius:4px;background-color:#f5f5f5;}
+.openWindow .addBtn ul li a:last-child{margin-right:0;}
+.openWindow .addBtn ul li a:hover{background-color:#f1f1f1;}
+
+/*弹窗-发布按钮*/
+.openWindowBottom{position:fixed;bottom:0;float:left;width:100%;background:#f5f5f5;padding:5px 0;text-align:center;}
+.openWindowBottom ul.sendAndCancelBtn{display:inline-block;margin:10px auto;}
+.openWindowBottom ul.sendAndCancelBtn li{float:left;margin-right:10px;}
+.openWindowBottom ul.sendAndCancelBtn li a{float:left;min-width:100px;padding:5px;text-align:center;border:1px solid #ddd;border-radius:4px;background-color:#fff;}
+.openWindowBottom ul.sendAndCancelBtn li a:last-child{margin-right:0;}
+.openWindowBottom ul.sendAndCancelBtn li a:hover{background-color:#f1f1f1;}
+.openWindowBottom ul.sendAndCancelBtn li a.Blue-btn{color:#fff;background-color:#429bd1;border:1px solid #4495c7;cursor:pointer;}
+.openWindowBottom ul.sendAndCancelBtn li a.Blue-btn:hover{background-color:#4ca8df;}
+
+/*弹窗-列表式*/
+.openWindow-list{float:left;width:100%;}
+.openWindow-list-table{width:100%; table-layout:fixed; border-collapse:collapse;}
+.openWindow-list-table th,.openWindow-list-table td{border-bottom:1px solid #eee;padding:10px 5px;}
+.openWindow-list-table th.fileKind{width:40px;}
+.openWindow-list-table th.fileKind img{width:20px;height:20px;border-radius:2px;}
+.openWindow-list-table td{font-size:13px;color:#444; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.openWindow-list-table td.fileSize{width:100px;}
+.openWindow-list-table td.successOrNot{width:150px;color:#C00;}
+.openWindow-list-table td.filedelete{width:40px;background-image:url(../images/tongxunlu-left-delete.png);background-repeat:no-repeat;background-position:center center;cursor:pointer;}
+.openWindow-list-table td.filedelete:hover{background-image:url(../images/tongxunlu-left-delete-hover.png);}
+
+/*弹窗-图片式*/
+.openWindow-pic{float:left;width:100%;}
+.openWindow-pic-ul{float:left;width:100%;}
+.openWindow-pic-ul li{position:relative;float:left;width:130px;height:130px;margin-top:10px;margin-left:10px;}
+.openWindow-pic-ul li:hover div.openWindow-pic-li-hover{display:block;}
+.openWindow-pic-ul li img{width:130px;height:130px;}
+.openWindow-pic-ul li span.pic-success{position:absolute;padding-left:30px;width:100px;height:20px;bottom:0;left:0;color:#fff;background-color:#0C0;background-image:url(../images/hadmind-white.png);background-position:10px center;background-repeat:no-repeat;line-height:20px;font-size:13px;}
+.openWindow-pic-ul li span.pic-fail{position:absolute;padding-left:30px;width:100px;height:20px;bottom:0;left:0;color:#fff;background-color:#C00;background-image:url(../images/cancelmind-white.png);background-position:10px center;background-repeat:no-repeat;line-height:20px;font-size:13px;}
+.openWindow-pic-ul li div.openWindow-pic-li-hover{display:none;position:absolute;padding:0 10px;width:110px;height:110px;left:0;top:0;background:rgba(0,0,0,0.5);color:#eee;line-height:110px;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+.openWindow-pic-ul li div.openWindow-pic-li-hover i.pic-delete{position:absolute;width:12px;height:12px;top:8px;right:8px;background:url(../images/cancelmind-white.png) center center no-repeat;cursor:pointer;}
+
+/*弹窗-输入式*/
+.openWindow-input-table{width:100%; table-layout:fixed; border-collapse:collapse;margin-top:30px;}
+.openWindow-input-table td{padding:0 5px;}
+.openWindow-input-table td.item-name{text-align:right;}
+.openWindow-input-table td input{width:70%; box-shadow:0 0 2px #ddd;}
+
+/*弹窗-长输入式*/
+.openWindow-textarea-table{width:100%; table-layout:fixed; border-collapse:collapse;}
+.openWindow-textarea-table td{padding:10px;}
+.openWindow-textarea-table td textarea{height:370px;width:765px; box-shadow:0 0 2px #ddd;}

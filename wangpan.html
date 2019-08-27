@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wangpan.css">
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/wangpan.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript" src="js/openwindow.js"></script>
+<title>网盘</title>
+</head>
+
+<body>
+<!--头部按钮-->
+<div class="wangpan-top-btn">
+	<div class="wangpan-top-leftbtn">
+        <a class="Blue-btn">上传文件</a>
+        <a class="White-btn xw_addfolder">新建文件夹</a>
+    </div>
+    <div class="wangpan-top-rightbtn">
+        <a class="listBtn aon"></a>
+        <a class="blockBtn"></a>
+    </div>
+</div>
+<!--头部路径-->
+<div class="wangpan-top-path">
+	<div class="wangpan-top-leftpath">
+    	<a>返回上一级</a>|<a>全部文件</a>><a>学习资料</a>><a>UI学习</a>><font>PS学习教程</font>
+    </div>
+    <div class="wangpan-top-righttotal">
+    	<font>共32个结果</font>
+    </div>
+</div>
+<!--列表数据-->
+<div class="wangpan-table-data xw-dataShowKind" style="display:block;">
+	<div class="wangpan-fileList-table-thead-div">
+    	<table class="wangpan-fileList-table-thead">
+            <tr class="tablehead">
+                <th class="fileName">
+                    <span class="xw_gouselect gouselect"></span>
+                    文件名
+                    <span class="paixuIcon"></span>
+                    <a class="operabtn White-btn">分享</a>
+                    <a class="operabtn White-btn">下载</a>
+                    <a class="operabtn White-btn">删除</a>
+                    <a class="operabtn White-btn operabtn-arrow">更多<ul><li>重命名</li><li>复制到</li><li>移动到</li></ul></a>
+                </th>
+                <th class="fileSize">大小<span class="paixuIcon"></span></th>
+                <th class="fileDate">修改日期<span class="paixuIcon"></span></th>
+            </tr>
+        </table>
+    </div>
+    <div class="wangpan-fileList-table-tbody-div">
+    	<table class="wangpan-fileList-table-tbody">
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-xls"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-txt"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-pdf"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-ppt"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-pic"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-doc"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-xls"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-txt"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-pdf"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-ppt"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+            <tr>
+                <td class="td-fileName"><span class="xw_gouselect gouselect"></span><span class="table-data-kindicon filekindicon-pic"></span>students.docx<div class="itemOperaBtn"><a class="itemOperaBtn-share"></a><a class="itemOperaBtn-download"></a><a class="itemOperaBtn-more"><ul><li>重命名</li><li>复制到</li><li>移动到</li><li>删除</li></ul></a></div></td>
+                <td class="td-fileSize">597KB</td>
+                <td class="td-fileDate">2015-08-12 13:45</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--块状数据-->
+<div class="wangpan-block-data xw-dataShowKind">
+	<div class="wangpan-fileList-table-thead-div">
+    	<table class="wangpan-fileList-table-thead">
+            <tr class="tablehead">
+                <th class="fileName">
+                	<span class="alreadySelect">已选中<font class="fileNum">3</font>个文件/文件夹</span>
+                    <span class="xw_gouselect gouselect"></span>
+                    <a class="operabtn White-btn">分享</a>
+                    <a class="operabtn White-btn">下载</a>
+                    <a class="operabtn White-btn">删除</a>
+                    <a class="operabtn White-btn operabtn-arrow">更多<ul><li>重命名</li><li>复制到</li><li>移动到</li></ul></a>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <ul class="wangpan-block-ul">
+    	<li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-word"></div>
+            <p>text.doc</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-ppt"></div>
+            <p>text.ppt</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-excel"></div>
+            <p>text.xls</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-rar"></div>
+            <p>text.rar</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-file"></div>
+            <p>text</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-pdf"></div>
+            <p>text.pdf</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-zip"></div>
+            <p>text.zip</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-txt"></div>
+            <p>text.txt</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-pic"><img src="images/pic1.png"/></div>
+            <p>text.png</p>
+        </li>
+        <li>
+        	<span class="notebook-data-item-nogou xw_BlueBgGouSelect" rel="0"></span>
+        	<div class="blockFileKindIcon blockFileKindIcon-pic"><img src="images/cover2.png"/></div>
+            <p>text.png</p>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

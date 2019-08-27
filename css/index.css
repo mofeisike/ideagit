@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    min-width: 1024px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/*头部*/
+.layout-head {
+    width: 100%;
+    height: 50px;
+    background: #1f2228;
+}
+
+/*头部-logo*/
+.head-logo {
+    float: left;
+    width: 160px;
+    height: 49px;
+    cursor: pointer;
+}
+
+.head-logo a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.head-logo a img {
+    float: left;
+    height: 30px;
+    margin: 10px auto 10px 15px;
+}
+
+/*头部-菜单*/
+.head-headnav {
+    float: left;
+}
+
+.head-headnav .head-headnav-ul {
+    float: left;
+}
+
+.head-headnav .head-headnav-ul li {
+    float: left;
+}
+
+.head-headnav .head-headnav-ul li a {
+    float: left;
+    height: 100%;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.head-headnav .head-headnav-ul li a.headnav-selected {
+    color: #99c93f;
+    font-weight: bold;
+    line-height: 47px;
+    border-top: 3px solid #99c93f;
+}
+
+.head-headnav .head-headnav-ul li a:hover {
+    background: #99c93f;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/*头部-右侧小菜单*/
+.head-otherSamllNavs {
+    float: right;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul {
+    float: left;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul li {
+    position: relative;
+    float: left;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul li:hover dl.otherSmallNas-subNavs {
+    display: block;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul li a img.portrail {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    margin-top: 9px;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul li a.otherSmallNas-firstNavs {
+    height: 100%;
+    padding: 0 20px;
+    border-left: 1px solid #4d4d4d;
+    color: #fff;
+    font-size: 12px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul li a.otherSmallNas-firstNavs:first-child {
+    border-left: 0;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul li a.otherSmallNas-hasarrow {
+    background: url(../images/arrow-small.png) 90% center no-repeat;
+}
+
+.head-otherSamllNavs .head-otherSamllNavs-ul li a.otherSmallNas-firstNavs:hover {
+    text-decoration: underline;
+}
+
+/*头部-右侧小菜单-二级菜单*/
+dl.otherSmallNas-subNavs {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 90px;
+    background: #fff;
+    right: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+dl.otherSmallNas-subNavs dt {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+dl.otherSmallNas-subNavs dt a {
+    float: left;
+    width: 90%;
+    padding: 8px 5%;
+    color: #666;
+}
+
+dl.otherSmallNas-subNavs dt a.topline {
+    border-top: 1px dotted #eee;
+}
+
+dl.otherSmallNas-subNavs dt a:hover {
+    background-color: #429bd1;
+    color: #fff;
+}
+
+/*头部-右侧小菜单-通知提示*/
+.notice-tips {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #F60;
+}
+
+/*头部-右侧小菜单-二维码*/
+.scancode {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    z-index: 101;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*左侧菜单*/
+.layout-leftnav {
+    position: relative;
+    float: left;
+    width: 160px;
+    background: #1f2228;
+    padding: 10px 0;
+}
+
+.layout-leftnav .indexPortrail {
+    float: left;
+    width: 140px;
+    padding: 20px 0;
+    margin: 0 10px;
+}
+
+.layout-leftnav .indexPortrail img {
+    display: block;
+    margin: 10px auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 2px solid #99c93f;
+}
+
+.layout-leftnav .indexPortrail p {
+    text-align: center;
+    color: #99c93f;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.layout-leftnav .layout-leftnav-ul {
+    float: left;
+    width: 100%;
+}
+
+.layout-leftnav .layout-leftnav-ul li {
+    float: left;
+    width: 100%;
+}
+
+.layout-leftnav .layout-leftnav-ul li a {
+    position: relative;
+    float: left;
+    padding: 15px 30%;
+    width: 40%;
+    color: #eee;
+    cursor: pointer;
+    background-position: 15px center;
+    background-repeat: no-repeat
+}
+
+.layout-leftnav .layout-leftnav-ul li a.leftnav-selected {
+    background-color: #2d3138;
+    color: #fff;
+}
+
+.layout-leftnav .layout-leftnav-ul li a:hover {
+    background-color: #2d3138;
+    color: #fff;
+}
+
+.layout-leftnav .layout-leftnav-ul li a i.leftnav-kindnum {
+    position: absolute;
+    left: 110px;
+    min-width: 14px;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    background: #494d50;
+    border-radius: 2px;
+    padding: 2px 4px;
+    color: #ccc;
+}
+
+/*左侧菜单-菜单图标*/
+.layout-leftnav .layout-leftnav-ul li.leftnav-sharing a {
+    background-image: url(../images/leftnav-icon-sharing.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-myshare a {
+    background-image: url(../images/leftnav-icon-share.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-fans a {
+    background-image: url(../images/leftnav-icon-fans.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-mind a {
+    background-image: url(../images/leftnav-icon-mind.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-friends a {
+    background-image: url(../images/leftnav-icon-friends.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-notice a {
+    background-image: url(../images/leftnav-icon-notice.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-allfiles a {
+    background-image: url(../images/leftnav-icon-allfiles.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-music a {
+    background-image: url(../images/leftnav-icon-music.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-otherfiles a {
+    background-image: url(../images/leftnav-icon-otherfiles.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-video a {
+    background-image: url(../images/leftnav-icon-video.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-file a {
+    background-image: url(../images/leftnav-icon-file.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-picture a {
+    background-image: url(../images/leftnav-icon-picture.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-personalpic a {
+    background-image: url(../images/leftnav-icon-personalpic.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-cloudpic a {
+    background-image: url(../images/leftnav-icon-cloudpic.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-tongxunlu a {
+    background-image: url(../images/leftnav-icon-tongxunlu.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-tonghua a {
+    background-image: url(../images/leftnav-icon-tonghua.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-message a {
+    background-image: url(../images/leftnav-icon-message.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-topic a {
+    background-image: url(../images/leftnav-icon-topic.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-notebook a {
+    background-image: url(../images/leftnav-icon-notebook.png);
+}
+
+.layout-leftnav .layout-leftnav-ul li.leftnav-mobilefind a {
+    background-image: url(../images/leftnav-icon-mobilefind.png);
+}
+
+/*左侧版权*/
+.copyRight {
+    position: absolute;
+    bottom: 10px;
+}
+
+.copyRight p {
+    width: 160px;
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    line-height: 18px;
+}
+
+.copyRight p.copyRight-line {
+    padding: 10px 0;
+    background: url(../images/copyright-line.png) center center no-repeat;
+}
+
+/*iframe*/
+.mainFrame {
+    margin: 0;
+    padding: 0;
+    min-width: 844px;
+}
+
+

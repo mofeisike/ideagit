@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部按钮*/
+.wangpan-top-btn {
+    width: 96%;
+    padding: 0 2%;
+    height: 50px;
+    background: #f5f5f5;
+}
+
+.wangpan-top-btn .wangpan-top-leftbtn {
+    float: left;
+}
+
+.wangpan-top-btn .wangpan-top-leftbtn a {
+    position: relative;
+    float: left;
+    min-width: 80px;
+    text-align: center;
+    margin: 10px 15px 0 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.wangpan-top-btn .wangpan-top-leftbtn a:hover ul.subOperaNav {
+    display: block;
+}
+
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav {
+    display: none;
+    position: absolute;
+    width: 120px;
+    z-index: 100;
+    left: -1px;
+    top: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav li {
+    float: left;
+    width: 110px;
+    padding: 8px 5px;
+    text-align: left;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav li.rightgouselect {
+    background-image: url(../images/hadmind.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+}
+
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav li:hover {
+    background-color: #59aee2;
+    color: #fff;
+}
+
+/*相册数据*/
+.networkpicture-downpart {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.networkpicture-downpart ul {
+    padding: 20px;
+}
+
+.networkpicture-downpart ul li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 200px;
+    padding: 6px 6px 0 6px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.networkpicture-downpart ul li div.cover {
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 160px;
+}
+
+.networkpicture-downpart ul li div.cover:hover span.editalbum {
+    display: block;
+}
+
+.networkpicture-downpart ul li div.cover img {
+    float: left;
+    width: 160px;
+    height: 160px;
+}
+
+.networkpicture-downpart ul li div.cover span.editalbum {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #fff url(../images/arrow-small-color444.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.networkpicture-downpart ul li div.cover span.editalbum:hover dl {
+    display: block;
+}
+
+.networkpicture-downpart ul li div.cover span.editalbum dl {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 50px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.networkpicture-downpart ul li div.cover span.editalbum dl dt {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #444;
+}
+
+.networkpicture-downpart ul li div.cover span.editalbum dl dt:hover {
+    background-color: #59aee2;
+    color: #fff;
+}
+
+.networkpicture-downpart ul li div.cover font.picture-total {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    color: #FFF;
+    font-size: 26px;
+    font-family: Gulim, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.networkpicture-downpart ul li p.album-name {
+    float: left;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    color: #444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

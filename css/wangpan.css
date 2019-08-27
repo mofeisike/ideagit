@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部按钮*/
+.wangpan-top-btn{width:96%;padding:0 2%;height:50px;background:#f5f5f5;}
+.wangpan-top-btn .wangpan-top-leftbtn{float:left;}
+.wangpan-top-btn .wangpan-top-leftbtn a{float:left;min-width:80px;text-align:center;margin:10px 15px 0 0;padding:5px 10px;border-radius:4px;}
+.wangpan-top-btn .wangpan-top-rightbtn{float:right;margin-top:10px;}
+.wangpan-top-btn .wangpan-top-rightbtn a{float:left;width:34px;height:30px;border:1px solid #ddd;background-color:#fff;background-position:center center;background-repeat:no-repeat;}
+.wangpan-top-btn .wangpan-top-rightbtn a.listBtn{background-image:url(../images/listBtn-grey.png);}
+.wangpan-top-btn .wangpan-top-rightbtn a.blockBtn{background-image:url(../images/blockBtn-grey.png);}
+.wangpan-top-btn .wangpan-top-rightbtn a:first-child{border-radius:4px 0 0 4px;}
+.wangpan-top-btn .wangpan-top-rightbtn a:last-child{margin-left:-1px;border-radius:0 4px 4px 0;}
+.wangpan-top-btn .wangpan-top-rightbtn a.aon{background-color:#ccc;}
+.wangpan-top-btn .wangpan-top-rightbtn a.aon:first-child{background-image:url(../images/listBtn-white.png);}
+.wangpan-top-btn .wangpan-top-rightbtn a.aon:last-child{background-image:url(../images/blockBtn-white.png);}
+
+/*头部路径*/
+.wangpan-top-path{width:98%;padding:0 1%;height:30px;}
+.wangpan-top-path .wangpan-top-leftpath{float:left;color:#666;}
+.wangpan-top-path .wangpan-top-leftpath a{margin:0 5px;color:#3c95cb;cursor:pointer;line-height:30px;font-size:13px;}
+.wangpan-top-path .wangpan-top-leftpath a:hover{text-decoration:underline;}
+.wangpan-top-path .wangpan-top-leftpath font{margin:0 5px;font-size:13px;}
+.wangpan-top-righttotal{float:right;}
+.wangpan-top-righttotal font{color:#999;line-height:30px;font-size:13px;}
+
+.xw-dataShowKind{display:none;}
+
+/*列表数据*/
+/*--表头--*/
+.wangpan-table-data{width:98%;padding:0 1%;}
+.wangpan-table-data .wangpan-fileList-table-thead{width:100%; table-layout:fixed; border-collapse:collapse;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead{background:#f7f7f7;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th{color:#888;text-align:left;font-weight:normal;padding:10px;border:1px solid #dedede;cursor:pointer;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th:hover{background:#e8f5fd;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th span.paixuIcon{display:inline-block;margin-left:10px;width:9px;height:10px;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th span.jiangxuIcon{background:url(../images/jiangxuarrow.png) no-repeat;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th span.shengxuIcon{background:url(../images/shengxuarrow.png) no-repeat;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn{position:relative;padding:2px 14px;border-radius:2px;margin-left:4px;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn ul{display:none;position:absolute;top:23px;left:-1px;width:100%;border:1px solid #bbb;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn ul li{float:left;width:100%;padding:4px 0;text-align:center;font-size:12px;background:#fff;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn ul li:hover{background:#59aee2;color:#fff;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn-arrow{background-image:url(../images/arrow-small-color444.png);background-position:94% center;background-repeat: no-repeat;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn-arrow:hover ul{display:block;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th.fileName{border-right:1px solid #e7e7e7;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th.fileDate{width:20%;}
+.wangpan-table-data .wangpan-fileList-table-thead tr.tablehead th.fileSize{width:20%;border-right:1px solid #e7e7e7;}
+/*--表身--*/
+.wangpan-table-data .wangpan-fileList-table-tbody-div{overflow-y:auto;}
+.wangpan-table-data .wangpan-fileList-table-tbody{width:100%; table-layout:fixed; border-collapse:collapse;}
+.wangpan-table-data .wangpan-fileList-table-tbody tr:hover{background:#f7fcff;}
+.wangpan-table-data .wangpan-fileList-table-tbody tr:hover .itemOperaBtn{display:block;}
+.wangpan-table-data .wangpan-fileList-table-tbody tr.trselected{background:#f7fcff;}
+.wangpan-table-data .wangpan-fileList-table-tbody td{color:#444;text-align:left;padding:10px;border-bottom:1px solid #dedede;font-size:13px;}
+.wangpan-table-data .wangpan-fileList-table-tbody td.td-fileName:hover{text-decoration:underline;cursor:pointer;}
+.wangpan-table-data .wangpan-fileList-table-tbody td.td-fileDate{width:20%;}
+.wangpan-table-data .wangpan-fileList-table-tbody td.td-fileSize{width:20%;}
+.wangpan-table-data .wangpan-fileList-table-tbody td span.table-data-kindicon{float:left;width:20px;height:20px;border-radius:4px;margin-right:10px;background-position:center center;background-repeat:no-repeat;}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn{float:right;display:none;}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a{float:left;width:16px;height:16px;margin:2px 8px;cursor:pointer;}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-share{background-image:url(../images/itemoperabtn-share-lightblue.png);}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-download{background-image:url(../images/itemoperabtn-download-lightblue.png);}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-more{position:relative;background-image:url(../images/itemoperabtn-more-lightblue.png);}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-share:hover{background-image:url(../images/itemoperabtn-share.png);}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-download:hover{background-image:url(../images/itemoperabtn-download.png);}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-more:hover{background-image:url(../images/itemoperabtn-more.png);}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-more:hover ul{display:block;}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-more ul{display:none;position:absolute;width:70px;right:-30px;top:16px;border:1px solid #ccc; box-shadow:2px 2px 2px #ddd;}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-more ul li{float:left;width:100%;padding:4px 0;text-align:center;font-size:12px;background:#fff;}
+.wangpan-table-data .wangpan-fileList-table-tbody td .itemOperaBtn a.itemOperaBtn-more ul li:hover{background:#59aee2;color:#fff;}
+
+
+/*块状排列数据*/
+/*--表头--*/
+.wangpan-block-data{width:98%;padding:0 1%;}
+.wangpan-block-data .wangpan-fileList-table-thead{width:100%; table-layout:fixed; border-collapse:collapse;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead{background:#f7f7f7;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th{color:#888;text-align:left;font-weight:normal;padding:10px;border:1px solid #dedede;cursor:pointer;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th.thon{background:#e8f5fd;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead span.alreadySelect font{margin:0 5px;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn{position:relative;padding:2px 14px;border-radius:2px;margin-left:4px;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn ul{display:none;position:absolute;top:23px;left:-1px;width:100%;border:1px solid #bbb;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn ul li{float:left;width:100%;padding:4px 0;text-align:center;font-size:12px;background:#fff;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn ul li:hover{background:#59aee2;color:#fff;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn-arrow{background-image:url(../images/arrow-small-color444.png);background-position:94% center;background-repeat: no-repeat;}
+.wangpan-block-data .wangpan-fileList-table-thead tr.tablehead th a.operabtn-arrow:hover ul{display:block;}
+/*--表身--*/
+.wangpan-block-ul{width:100%;}
+.wangpan-block-ul li{position:relative;float:left;width:140px;margin:5px 5px 0 0;cursor:pointer;}
+.wangpan-block-ul li span.notebook-data-item-nogou{position:absolute;top:0;left:24px;width:50px;height:50px;}
+.wangpan-block-ul li div.blockFileKindIcon{width:90px;height:92px;margin:0 auto;border:2px solid #fff;}
+.wangpan-block-ul li div.blockFileKindIcon-word{background:url(../images/shareFileKind.png) -462px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-excel{background:url(../images/shareFileKind.png) -308px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-ppt{background:url(../images/shareFileKind.png) -616px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-rar{background:url(../images/shareFileKind.png) -2142px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-zip{background:url(../images/shareFileKind.png) -154px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-pdf{background:url(../images/shareFileKind.png) -920px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-txt{background:url(../images/shareFileKind.png) -1072px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-file{background:url(../images/spritenew-f.gif) -24px -0px no-repeat;}
+.wangpan-block-ul li div.blockFileKindIcon-pic img{display:block;height:100%;max-width:100%;margin:0 auto;}
+.wangpan-block-ul li p{width:90%;padding:5px 5%;text-align:center;}
+.wangpan-block-ul li p:hover{text-decoration:underline;}
+.wangpan-block-ul li.blockItemHover span.notebook-data-item-nogou{background:url(../images/notebook-data-item-nogou.png) no-repeat;cursor:pointer;}
+.wangpan-block-ul li.blockItemHover div.blockFileKindIcon{border:2px solid #429bd1;}
+.wangpan-block-ul li.blockItemHover span.notebook-data-item-gou{background:url(../images/notebook-data-item-gou.png) no-repeat;}
+.wangpan-block-ul li.blockItemSelected span.notebook-data-item-nogou{background:url(../images/notebook-data-item-nogou.png) no-repeat;cursor:pointer;}
+.wangpan-block-ul li.blockItemSelected div.blockFileKindIcon{border:2px solid #429bd1;}
+.wangpan-block-ul li.blockItemSelected span.notebook-data-item-gou{background:url(../images/notebook-data-item-gou.png) no-repeat;}
+
+
+
+
+

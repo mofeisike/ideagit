@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部按钮*/
+.wangpan-top-btn{width:96%;padding:0 2%;height:50px;background:#f5f5f5;}
+.wangpan-top-btn .wangpan-top-leftbtn{float:left;}
+.wangpan-top-btn .wangpan-top-leftbtn img.cover{float:left;width:40px;height:40px;margin:4px 0;border:1px solid #ddd;}
+.wangpan-top-btn .wangpan-top-leftbtn div.albumInfo{float:left;margin:5px 20px 5px 10px;max-width:100px;}
+.wangpan-top-btn .wangpan-top-leftbtn p{float:left;width:100%;clear:both;color:#666;font-size:12px;line-height:20px; overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.wangpan-top-btn .wangpan-top-leftbtn a{position:relative;float:left;min-width:80px;text-align:center;margin:10px 15px 0 0;padding:5px 10px;border-radius:4px;}
+.wangpan-top-btn .wangpan-top-leftbtn a:hover ul.subOperaNav{display:block;}
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav{display:none;position:absolute;z-index:100;width:120px;left:-1px;top:30px;border:1px solid #ccc; box-shadow:2px 2px 2px #ddd;}
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav li{float:left;width:110px;padding:8px 5px;text-align:left;font-size:12px;background-color:#fff;}
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav li.rightgouselect{background-image:url(../images/hadmind.png);background-position:95% center;background-repeat:no-repeat;}
+.wangpan-top-btn .wangpan-top-leftbtn a ul.subOperaNav li:hover{background-color:#59aee2;color:#fff;}
+.wangpan-top-btn .wangpan-top-rightbtn{float:right;}
+.wangpan-top-btn .wangpan-top-rightbtn a{float:left;min-width:80px;text-align:center;margin:10px 0 0 15px;padding:5px 10px;border-radius:4px;}
+
+/*照片数据*/
+.networkpicture-downpart{width:100%;overflow-y:auto;}
+.networkpicture-downpart .Batch-management{display:none;width:96%;padding:20px 2% 0 2%;}
+.networkpicture-downpart .Batch-management a.operaBtn{padding:2px 14px;border-radius:2px;margin-left:4px;}
+.networkpicture-downpart ul{width:96%;padding:20px 2%;}
+.networkpicture-downpart ul li{float:left;margin-right:20px;margin-bottom:20px;width:180px;height:170px;background:#fff;border:1px solid #eee;cursor:pointer;}
+.networkpicture-downpart ul li div.cover{position:relative;float:left;width:180px;height:140px;}
+.networkpicture-downpart ul li div.cover:hover span.editalbum{display:block;}
+.networkpicture-downpart ul li div.cover img{float:left;width:180px;height:140px;}
+.networkpicture-downpart ul li div.cover span.gouselect{display:none;position:absolute;top:0;left:0;}
+.networkpicture-downpart ul li div.cover span.editalbum{display:none;position:absolute;right:5px;top:5px;width:24px;height:24px;border:1px solid #ddd;border-radius:2px;background:#fff url(../images/arrow-small-color444.png) center center no-repeat;cursor:pointer;}
+.networkpicture-downpart ul li div.cover span.editalbum:hover dl{display:block;}
+.networkpicture-downpart ul li div.cover span.editalbum dl{display:none;position:absolute;right:0;top:25px;z-index:100;width:80px;border:1px solid #ddd;border-radius:2px;background:#fff;}
+.networkpicture-downpart ul li div.cover span.editalbum dl dt{padding:5px;cursor:pointer;font-size:13px;color:#444;}
+.networkpicture-downpart ul li div.cover span.editalbum dl dt:hover{background-color:#59aee2;color:#fff;}
+.networkpicture-downpart ul li div.cover font.picture-total{position:absolute;right:5px;bottom:0;color:#FFF;font-size:26px;font-family:Gulim,Arial, Helvetica, sans-serif;letter-spacing:1px;}
+.networkpicture-downpart ul li p.album-name{float:left;height:30px;width:96%;padding:0 2%;font-size:12px;line-height:30px;color:#444; overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
