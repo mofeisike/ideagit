@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2568aaf-caa8-44ef-a799-fa5324178324" name="Default" comment="项目第other的第二部">
-      <change afterPath="$PROJECT_DIR$/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e2568aaf-caa8-44ef-a799-fa5324178324" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/home-dingyue.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home-dingyue.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/home-notice.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home-notice.css" afterDir="false" />
@@ -33,7 +31,6 @@
       <change beforePath="$PROJECT_DIR$/js/wangpan.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/wangpan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layer/skin/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/layer/skin/layer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layer/skin/layer.ext.css" beforeDir="false" afterPath="$PROJECT_DIR$/layer/skin/layer.ext.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wangpan.html" beforeDir="false" afterPath="$PROJECT_DIR$/wangpan.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -113,8 +110,8 @@
       <file leaf-file-name="wangpan.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wangpan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="356">
+              <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -228,7 +225,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563159066966</updated>
       <workItem from="1563159068160" duration="116000" />
-      <workItem from="1566870043899" duration="1460000" />
+      <workItem from="1566870043899" duration="1708000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1566870533722</created>
@@ -251,24 +248,31 @@
       <option name="project" value="LOCAL" />
       <updated>1566871101171</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="项目第三部">
+      <created>1566871647694</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566871647694</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1576000" />
+    <option name="totallyTimeSpent" value="1824000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="320" y="125" width="974" height="793" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28148958" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13706666" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32982087" />
       <window_info anchor="right" id="Nativescript Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="NativeScript" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32874617" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.4776445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.46941897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -285,6 +289,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -292,7 +322,8 @@
     <MESSAGE value="项目初始化" />
     <MESSAGE value="项目第二部" />
     <MESSAGE value="项目第other的第二部" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目第other的第二部" />
+    <MESSAGE value="项目第三部" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目第三部" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/common.css">
@@ -402,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wangpan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="356">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
         </state>
       </provider>
     </entry>
